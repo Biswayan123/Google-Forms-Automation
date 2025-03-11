@@ -26,38 +26,38 @@ public class AutomteGoogleForms {
 		driver.findElement(By.xpath("//input[@id='download_xlsx0']")).click();
 
 		
-//		for(int i=1;i<=5;i++) {
-//			
-//			System.out.println("Form Filling :" + i);
-//			
-//			WebElement radioOption3 = driver.findElement(By.xpath("//div[@id='i11']"));
-//			WebElement textbox = driver.findElement(By.xpath("//input[@type='text']"));
-//			WebElement checkboxOption2 = driver.findElement(By.xpath("//div[@id='i29']"));
-//			WebElement checkboxOption4 = driver.findElement(By.xpath("//div[@id='i35']"));
-//			WebElement submitBtn = driver.findElement(By.xpath("//span[contains(text(),'Submit')]"));
-//		
-//			radioOption3.click();
-//			
-//			//Thread.sleep(2000);
-//			textbox.sendKeys("Biswayan");
-//			
-//			//Thread.sleep(2000);
-//			checkboxOption2.click();
-//			
-//			//Thread.sleep(2000);
-//			checkboxOption4.click();
-//			
-//			submitBtn.click();
-//			WebElement responseRecorded = driver.findElement(By.xpath("//div[text()='Your response has been recorded.']"));
-//			Assert.assertTrue(responseRecorded.isDisplayed());
-//
-//			WebElement resubmit = driver.findElement(By.xpath("//a[text()='Submit another response']"));
-//			resubmit.click();
-//
-//			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='i11']")));
-//		}
-//
-//		driver.quit();
+		for(int i=1;i<=5;i++) {
+			
+			System.out.println("Form Filling :" + i);
+			
+			WebElement radioOption3 = driver.findElement(By.xpath("//div[@id='i11']"));
+			WebElement textbox = driver.findElement(By.xpath("//input[@type='text']"));
+			WebElement checkboxOption2 = driver.findElement(By.xpath("//div[@id='i29']"));
+			WebElement checkboxOption4 = driver.findElement(By.xpath("//div[@id='i35']"));
+			WebElement submitBtn = driver.findElement(By.xpath("//span[contains(text(),'Submit')]"));
+		
+			radioOption3.click();
+			
+			//Thread.sleep(2000);
+			textbox.sendKeys("Biswayan");
+			
+			//Thread.sleep(2000);
+			checkboxOption2.click();
+			
+			//Thread.sleep(2000);
+			checkboxOption4.click();
+			
+			submitBtn.click();
+			WebElement responseRecorded = driver.findElement(By.xpath("//div[text()='Your response has been recorded.']"));
+			Assert.assertTrue(responseRecorded.isDisplayed());
+
+			WebElement resubmit = driver.findElement(By.xpath("//a[text()='Submit another response']"));
+			resubmit.click();
+
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='i11']")));
+		}
+
+		driver.quit();
 
 	}
 
